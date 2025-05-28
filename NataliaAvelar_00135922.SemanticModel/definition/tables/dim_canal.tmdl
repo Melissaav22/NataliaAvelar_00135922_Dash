@@ -1,0 +1,40 @@
+table dim_canal
+	lineageTag: 74182811-6a1b-40ac-879d-846bdce29777
+
+	column id_canal
+		dataType: int64
+		formatString: 0
+		lineageTag: 942d0ace-895e-47bf-912c-2357914de556
+		summarizeBy: none
+		sourceColumn: id_canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_canal
+		dataType: string
+		lineageTag: ec9abe24-926a-4996-9b6c-5eb1e4b71d4c
+		summarizeBy: none
+		sourceColumn: tipo_canal
+
+		annotation SummarizationSetBy = Automatic
+
+	column canal
+		dataType: string
+		lineageTag: 7a647314-201f-4a9f-8f84-706016c4cea7
+		summarizeBy: none
+		sourceColumn: canal
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_canal = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\natal_5bvjz7f\Downloads\VentasVehiculos.xlsx"), null, true),
+				    dim_canal_Table = Source{[Item="dim_canal",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dim_canal_Table,{{"id_canal", Int64.Type}, {"tipo_canal", type text}, {"canal", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

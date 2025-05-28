@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "NataliaAvelar_00135922"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "082f6857-3be8-4f26-8a1a-50250b62fc7a"
+  }
+}

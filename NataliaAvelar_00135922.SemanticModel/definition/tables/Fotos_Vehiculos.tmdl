@@ -1,0 +1,57 @@
+table Fotos_Vehiculos
+	lineageTag: ede37a33-8dbf-4c03-a895-d501b75e5982
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: a9271449-6f16-4e0f-97e3-9908d49bb8d4
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Modelo
+		dataType: string
+		lineageTag: 61f098b4-4809-4f5f-be13-1f6930b423be
+		summarizeBy: none
+		sourceColumn: Modelo
+
+		annotation SummarizationSetBy = Automatic
+
+	column Version
+		dataType: string
+		lineageTag: 8c7f8572-27c4-4017-b407-265fa5447a96
+		summarizeBy: none
+		sourceColumn: Version
+
+		annotation SummarizationSetBy = Automatic
+
+	column Precio
+		dataType: int64
+		formatString: 0
+		lineageTag: b4b2baba-d74b-4542-b8cc-969fcb036626
+		summarizeBy: none
+		sourceColumn: Precio
+
+		annotation SummarizationSetBy = Automatic
+
+	column Imagen
+		dataType: string
+		lineageTag: 219010a0-2cbe-4865-bcaa-19bc1b4b078f
+		summarizeBy: none
+		sourceColumn: Imagen
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Fotos_Vehiculos = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\natal_5bvjz7f\Downloads\VentasVehiculos.xlsx"), null, true),
+				    Fotos_Vehiculos_Table = Source{[Item="Fotos_Vehiculos",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Fotos_Vehiculos_Table,{{"Id", Int64.Type}, {"Modelo", type text}, {"Version", type text}, {"Precio", Int64.Type}, {"Imagen", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,164 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 683.17948364515564,
+            "y": 883.16050862488521
+          },
+          "nodeIndex": "Dim_Calendario",
+          "nodeLineageTag": "ee19e2c0-d8ee-4d0e-91be-2b15e2b2b37f",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 434.33289881116866,
+            "y": 79.175063781299741
+          },
+          "nodeIndex": "dim_canal",
+          "nodeLineageTag": "74182811-6a1b-40ac-879d-846bdce29777",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 763.70267257415776,
+            "y": -50
+          },
+          "nodeIndex": "Dim_Cliente",
+          "nodeLineageTag": "c9b6f3d2-c23c-4f46-a1a5-5482205d5ef4",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 338.75110082428023,
+            "y": 831.97454089467215
+          },
+          "nodeIndex": "dim_sede",
+          "nodeLineageTag": "ed5674e9-d731-437d-92ec-da3e20661d75",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 934.30112196470077,
+            "y": 627.74970115322458
+          },
+          "nodeIndex": "dim_vehiculo",
+          "nodeLineageTag": "f89b7daf-495d-4c62-91b8-44b060c9b118",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1014.0609250551743,
+            "y": 132.18637429401497
+          },
+          "nodeIndex": "Dim_Vendedor",
+          "nodeLineageTag": "472e726a-3a2b-4675-ac7f-402757287170",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 775.64641056467394
+          },
+          "nodeIndex": "fact_Presupuestos",
+          "nodeLineageTag": "7e70a943-257e-45f7-850c-853e7dc0780c",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 724.214571551201,
+            "y": 275.25401440058727
+          },
+          "nodeIndex": "Fact_Ventas",
+          "nodeLineageTag": "2066844a-560c-4315-b8f0-3d6690898ec2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 144.378320358564,
+            "y": 161.27717641740776
+          },
+          "nodeIndex": "Fotos_Vehiculos",
+          "nodeLineageTag": "ede37a33-8dbf-4c03-a895-d501b75e5982",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 435.65417870549328,
+            "y": 476.24907758695934
+          },
+          "nodeIndex": "Hoja1",
+          "nodeLineageTag": "b0c6c1c4-30c5-4061-ae45-1e9d3595afff",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1248.0609250551743,
+            "y": 478.58025431244255
+          },
+          "nodeIndex": "VARIABLES",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 44.905697313103978,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

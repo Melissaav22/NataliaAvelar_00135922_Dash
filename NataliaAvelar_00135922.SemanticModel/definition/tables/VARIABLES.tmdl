@@ -1,0 +1,25 @@
+table VARIABLES
+	lineageTag: 62853f71-fa3f-4d5b-a767-d41ba15a9aa6
+
+	measure SUMA_VENTAS = SUM(Fact_Ventas[Precio Venta sin IGV])
+		lineageTag: f38e0e0f-af03-4a4b-b073-49db135010c4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: f3ad3367-9c27-46da-b31d-f873c218edfb
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition VARIABLES = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = 6ae342e039484fa8b0528f7ea74f6408
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+
